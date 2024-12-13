@@ -13,23 +13,52 @@ float: left;
 width: 30%;
 background-color: aquamarine;
 height: 400px;
+height: 422px;
+
 }
+
+.wrapped-image {
+    display: inline-block;
+    float: left; 
+    margin: 0 15px 15px 0;
+    max-width: 200px; 
+    height: auto; 
+  }
 
 .content {
 float: left;
 width: 70%;
 background-color: yellowgreen;
-height: 400px;
+float: left;
+display: inline-block;
 }
-
+.main p {
+  display: inline-block;
+  width: 100%; /* Ensures paragraphs flow naturally around the floated image */
+}
 .image {
     background-color: yellow;
-    height: 200px;
     width: 100%;
 }
 
 .data {
     background-color: red;
+    width: 100%;
+}
+
+footer {
+    background-color: blueviolet;
     height: 200px;
     width: 100%;
+    display: flex;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+.image img {
+    width: 100%;
+    height: auto;
 }
